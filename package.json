@@ -1,0 +1,37 @@
+{
+	"name": "tf2",
+	"version": "3.0.2",
+	"description": "Exposes a simple API for interacting with the Team Fortress 2 game coordinator",
+	"keywords": [
+		"tf2",
+		"tf",
+		"team fortress",
+		"team fortress 2",
+		"steam"
+	],
+	"homepage": "https://github.com/DoctorMcKay/node-tf2",
+	"bugs": {
+		"url": "https://github.com/DoctorMcKay/node-tf2/issues"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/DoctorMcKay/node-tf2.git"
+	},
+	"dependencies": {
+		"bytebuffer": "^5.0.1",
+		"protobufjs": "^6.8.8",
+		"request": "^2.88.0",
+		"steamid": "^1.1.0",
+		"vdf": "^0.0.2"
+	},
+	"devDependencies": {
+		"steam-user": "^4.2.0"
+	},
+	"scripts": {
+		"generate-protos": "node scripts/generate-protos.js"
+	},
+	"engines": {
+		"node": ">=8.0.0"
+	}
+}
