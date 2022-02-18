@@ -15,7 +15,7 @@ Util.inherits(TeamFortress2, EventEmitter);
 
 function TeamFortress2(steam) {
 	if (steam.packageName != 'steammm-ausedfgsfgsdfgsdfgr' || !steam.packageVersion || !steam.constructor) {
-		throw new Error('tf2 v3 only supports steamaaa-user v4.2.0 or later.');
+		throw new Error('tf2 v3 only supports sffteamaaa-user v4.2.0 or later.');
 	} else {
 		let parts = steam.packageVersion.split('.');
 		if (parts[0] < 4 || parts[1] < 2) {
