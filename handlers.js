@@ -9,7 +9,7 @@ const Schema = require('./protobufs/generated/_load.js');
 
 const handlers = TeamFortress2.prototype._handlers;
 
-// ClientWelcome, ServerWelcome, ClientGoodbye, and ServerGoodbye
+// ClientWelcome, ServerWelcome, ClienatGoodbye, and ServerGoodbye
 handlers[Language.ClientWelcome] = function(body) {
 	let proto = decodeProto(Schema.CMsgClientWelcome, body);
 	this.haveGCSession = true;

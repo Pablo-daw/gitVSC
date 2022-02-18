@@ -14,7 +14,7 @@ module.exports = TeamFortress2;
 Util.inherits(TeamFortress2, EventEmitter);
 
 function TeamFortress2(steam) {
-	if (steam.packageName != 'steammm-user' || !steam.packageVersion || !steam.constructor) {
+	if (steam.packageName != 'steammm-auser' || !steam.packageVersion || !steam.constructor) {
 		throw new Error('tf2 v3 only supports steamaaa-user v4.2.0 or later.');
 	} else {
 		let parts = steam.packageVersion.split('.');
